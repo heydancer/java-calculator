@@ -37,7 +37,7 @@ class CalculatorTest extends BaseTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test()
+    @Test
     public void testDivideWillThrowExceptionWhenDivideOnZero() {
         final ArithmeticException exception = Assertions.assertThrows(
                 ArithmeticException.class, () -> calculator.division(9, 0));
